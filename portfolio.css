@@ -1,0 +1,285 @@
+:root {
+    --primary-bg: #F2F2F2;
+    --secondary-bg:  #F2C744;
+    --tertiary-bg: #404040;
+    --accent-bg: #dddddd;
+    --text-color: #ffffff;
+    --name-font:"Sigmar", sans-serif;
+    --primary-font: "Bebas Neue", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    transition: all 0.5s ease-in-out;
+}
+
+header {
+    background-color: var(--tertiary-bg);
+    height: 40px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+}
+
+body{
+    background-color: var(--primary-bg);
+}
+
+nav {
+    letter-spacing: 2px;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.words-nav{
+    color: var(--primary-bg);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    transition: transform 0.4s, background-color 0.3s, color 0.3s;
+}
+
+
+.words-nav:hover {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--secondary-bg);
+    color: var(--dark-bg);
+    transform: translateY(-2px);
+    
+}
+
+#about{
+    width: 100%;
+    margin: 8em 0 0 0px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+.about.content{
+    margin: 0;
+}
+
+.greeting, .work{
+    letter-spacing: 2px;
+}
+
+.about h1 {
+    font-family: var(--name-font);
+    font-size: 5rem;
+    color: var(--secondary-bg);
+    text-shadow: 3px 3px 3px rgb(138, 138, 23);
+    font-weight: bold;
+    margin: 0;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+
+
+.about img{
+    align-items: flex-start;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-bg);
+}
+
+
+
+.name{
+    max-width: 700px;
+    line-height: 70px;
+}
+
+.greeting, .name, .work{
+    display: flex;
+    align-items: flex-start;
+}
+
+.above{
+    max-width: 80vw;
+    margin: 0 auto;
+    height: 70vh;
+    background-color: var(--accent-bg);
+    z-index: 1;
+    padding-top: 30px;
+}
+
+.perinfo{
+    margin: 0 auto;
+    max-width: 90vw;
+    font-family: "Sansita";
+    font-size: 20px;
+}
+
+.perinfo.title{
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.perinfo ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.perinfo ul, .perinfo p{
+    margin: 0 0 40px 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 70vw;
+}
+
+
+#certifications {
+    background-color: var(--tertiary-bg);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#certifications h3{
+    margin: 30px 0 10px 0;
+    color: var(--secondary-bg);
+    font-size: 50px;
+    text-shadow: 3px 3px 3px rgb(138, 138, 23);
+}
+
+.certs{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.certs img{
+    height: 300px;
+    width: 400px;
+}
+
+.images input{
+    display: none;
+}
+
+#testimonials {
+    background-color: var(--secondary-bg);
+    width: 100%;
+    height: 60vh;
+}
+
+.words{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 2em;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.b1, .b2, .b3{
+    height: 180px;
+    width: 400px;
+    border: 5px solid var(--tertiary-bg);
+    background-color: var(--primary-bg);
+    padding: 20px;
+}
+
+.comment{
+    font-size: 20px;
+    color: rgb(136, 136, 136);
+}
+
+.commentor{
+    margin-top: 10px;
+}
+
+footer {
+    background-color: var(--tertiary-bg);
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .about h1 {
+        margin-left: 10px;
+        font-size: 4em;
+    }
+
+    .about h2 {
+        margin-left: 10px;
+        font-size: 1.5rem;
+    }
+
+    .about p{
+        margin-bottom: 30px;
+    }
+
+    .about img {
+        margin-left: 10px;
+        max-width: 100%;
+    }
+
+    .words {
+        font-size: 1.5em;
+    }
+
+    .above{
+        max-width: 100vw;
+        height: 90vh; 
+    }
+
+    #testimonials {
+        height: 110vh;
+    }
+
+}
+
+@media  (max-width: 1100px){
+    #about{
+        margin-top: 15em;
+    }
+
+    .contents{
+        margin-left: 30px;
+    }
+
+    #certifications {
+        height: 800px;
+    }
+
+
+}
+
+@media  (max-width: 800px){
+    #certifications {
+        height: 1400px;
+    }
+}
+
+
